@@ -41,7 +41,6 @@ def youtube_search(query):
         channel = video_response["items"][0]["snippet"]["channelTitle"]
         views = video_response["items"][0]["statistics"]["viewCount"]
         likes = video_response["items"][0]["statistics"]["likeCount"]
-        #dislikes = video_response["items"][0]["statistics"]["dislikeCount"]
         comments = video_response["items"][0]["statistics"]["commentCount"]
 
         video_data.append((title, channel, views, likes, comments))
