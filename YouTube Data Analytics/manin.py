@@ -11,8 +11,7 @@ def youtube_search(query):
     youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
                     developerKey=DEVELOPER_KEY)
 
-    # Call the search.list method to retrieve results matching the specified
-    # query term.
+    # Call the search.list method to retrieve results matching the specified query term.
     search_response = youtube.search().list(
         q=query,
         type="video",
@@ -21,8 +20,7 @@ def youtube_search(query):
     ).execute()
 
     videos = []
-    # Add each result to the list, and then display the lists of
-    # matching videos, channels, and playlists.
+    # Add each result to the list
     for search_result in search_response.get("items", []):
         if search_result["id"]["kind"] == "youtube#video":
             videos.append(search_result)
@@ -54,5 +52,5 @@ if __name__ == "__main__":
     # Save the data to a CSV file
     with open("youtube_data.csv", "w", newline="", encoding="utf-8") as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["Title", "Channel", "Views", "Likes",  "Comments"])
+        writer.writerow(["Title", "Channel", "Views", "Likes",  "No_Comments"])
         writer.writerows(video_data)
