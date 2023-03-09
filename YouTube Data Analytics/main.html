@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YouTube Video Analyzer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>YouTube Video Analyzer</h1>
+		<form>
+			<label for="video-link">Enter YouTube video link or keyword:</label>
+			<input type="text" id="video-link" name="video-link" required>
+			<button type="submit">Analyze</button>
+		</form>
+		<div id="stats">
+			<h2>Video Statistics</h2>
+			<div id="chart-views"></div>
+			<div id="chart-likes"></div>
+			<div id="chart-comments"></div>
+			<div id="chart-sentiment"></div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
