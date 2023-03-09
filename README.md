@@ -1,2 +1,2 @@
-This Repository will hold all of the code and queries from the Data Analyst related Projects.
+Welcome to my portfolio repository! This is where I showcase my projects and skills to potential in Data Scientis to the world.
 
