@@ -15,7 +15,7 @@ To use the YouTube Data Analyzer, you will need to have the following installed:
 - Flask-SocketIO
 - PyWinAuto
 
-**Usage**
+### **Usage**
 
 To use the YouTube Data Analyzer, follow these steps:
 1. Open Power BI and create a new report
